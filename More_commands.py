@@ -1,6 +1,31 @@
 
 # coding: utf-8
 
+# # Starting a jupyter notebook
+
+# In[*]
+
+get_ipython().magic('matplotlib inline')
+
+import matplotlib.pyplot as plt
+
+
+
+# In[*]
+
+
+
+
+# In[*]
+
+
+
+
+# In[*]
+
+
+
+
 # # Linking to some other file
 
 # In[*]
