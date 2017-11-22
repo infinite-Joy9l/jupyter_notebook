@@ -21,3 +21,10 @@ get_ipython().run_cell_magic('time', '', 'user_ids = []\nsubreddit_ids = []\nsub
 
 get_ipython().run_cell_magic('time', '', "import numpy as np\nfrom scipy.sparse import csr_matrix\n\nrows = np.array(subreddit_ids)\ncols = np.array(user_ids)\ndata = np.ones((len(user_ids),))\nnum_rows = len(subreddit_to_id)\nnum_cols = i\n\n# the code above exists to feed this call.\nadj = csr_matrix((data, (rows, cols)), shape=(num_rows, num_cols))\nprint(adj.shape)\nprint('')")
 
+
+# # Showing math equations
+
+# In[*]
+
+get_ipython().run_cell_magic('latex', '', '\\begin{aligned}\n\\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} & = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\\\\n\\nabla \\cdot \\vec{\\mathbf{E}} & = 4 \\pi \\rho \\\\\n\\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} & = \\vec{\\mathbf{0}} \\\\\n\\nabla \\cdot \\vec{\\mathbf{B}} & = 0\n\\end{aligned}')
+
