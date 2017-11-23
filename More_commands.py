@@ -10,20 +10,18 @@ get_ipython().magic('matplotlib inline')
 import matplotlib.pyplot as plt
 
 
+# In[*]
+
+get_ipython().magic('load_ext version_information')
+get_ipython().magic('version_information scipy, numpy, Cython, matplotlib, version_information')
+
+
+# ## SHould give date information at the start of every notebook
 
 # In[*]
 
-
-
-
-# In[*]
-
-
-
-
-# In[*]
-
-
+import datetime
+print('This notebook last run on {date}'.format(date=datetime.datetime.today()))
 
 
 # # Linking to some other file
