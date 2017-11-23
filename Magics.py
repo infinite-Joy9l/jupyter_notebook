@@ -29,10 +29,12 @@ get_ipython().run_cell_magic('latex', '', '\\begin{aligned}\n\\nabla \\times \\v
 # The below command installs line profiler
 # 
 #     pip install line_profiler
+#     pip install memory_profiler
 
 # In[*]
 
 get_ipython().magic('load_ext line_profiler')
+get_ipython().magic('load_ext memory_profiler')
 
 
 # In[*]
@@ -58,4 +60,9 @@ def hunc(n, a):
 # In[*]
 
 get_ipython().magic('lprun -f func hunc(50000, 0.5)')
+
+
+# In[*]
+
+get_ipython().magic('memit hunc(50000, 0.5)')
 
